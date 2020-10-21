@@ -1,6 +1,6 @@
 # 📏 Unqueue
 
-Simple, zero-config, in-memory queue for async JS tasks
+Unqueue is a simple, zero-config, in-memory queue for async JavaScript tasks. You can use it to sequentially run tasks that return promises, like sending emails or performing networking requests. It automatically retries failed promises too.
 
 <!-- prettier-ignore-start -->
 |   | Status |
@@ -15,6 +15,7 @@ Simple, zero-config, in-memory queue for async JS tasks
 - No configuration or databases required (in-memory)
 - Automatically retry tasks if they fail
 - First-class TypeScript and Node.js 14 support
+- No dependencies
 
 ## 💻 Getting started
 
