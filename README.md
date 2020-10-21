@@ -37,6 +37,26 @@ queue.add(async () => {
 });
 ```
 
+Optionally, you can add metadata for tasks:
+
+```ts
+// Example helper to fetch and write user details
+const userIds = ["anand", "carlo"];
+const get = async (userId: string) => {
+  const { data } = await axios.get(`https://example.com/users/${userId}`);
+  await fs.writeFile(`${userId}.json`, data);
+};
+
+// Error handler that logs the user ID from metadata
+const queue = new Unqueue({
+  onError: ({ metadata, error }) =>
+    console.log(`Got an error in fetching ${metadata.userId}`, error),
+});
+userIds.forEach((id) => {
+  queue.add(() => get(id), { id });
+});
+```
+
 You can configure the queue, these are the defaults:
 
 ```ts
