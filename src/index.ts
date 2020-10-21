@@ -1,3 +1,14 @@
+export interface Task {
+  /** Async function to execute */
+  task: () => Promise<any>;
+  /** Number of attempts done */
+  attempt: number;
+  /** Execution error */
+  error?: any;
+  /** Optional metadata object */
+  metadata?: Record<any, any>;
+}
+
 export interface UnqueueConfig {
   /** Maximum number of attempts to try, defaults to 3 */
   maxAttempts?: number;
@@ -5,11 +16,13 @@ export interface UnqueueConfig {
   debug?: boolean;
   /** Interval to schedule */
   ttl?: number;
+  /** Error handler helper */
+  onError?: (task: Task) => void;
 }
 
 /** Unqueue is a queue for async JS */
 export class Unqueue {
-  tasks: Array<{ task: () => Promise<any>; attempt: number }> = [];
+  tasks: Array<Task> = [];
   running = false;
   config: UnqueueConfig = {};
 
@@ -33,10 +46,13 @@ export class Unqueue {
           await task.task();
         } catch (error) {
           this.log("Got an error", error);
-          this.add(task.task, task.attempt + 1);
+          this.add(task.task, task.metadata, task.attempt + 1, error);
         }
       } else {
-        this.log("More than 3 attempts, skipping");
+        this.log("More than 3 attempts, handling error");
+        if (typeof this.config.onError === "function") {
+          this.config.onError(task);
+        }
       }
     } else {
       this.log("No task");
@@ -46,8 +62,8 @@ export class Unqueue {
   }
 
   /** Add a task to the queue */
-  public add(task: () => Promise<any>, attempt = 1) {
-    this.tasks.push({ task, attempt });
+  public add(task: () => Promise<any>, metadata?: Record<any, any>, attempt = 1, error?: any) {
+    this.tasks.push({ task, attempt, error, metadata });
     if (!this.running) this.run();
   }
 

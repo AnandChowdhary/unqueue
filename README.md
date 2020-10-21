@@ -44,6 +44,7 @@ const queue = new Unqueue({
   maxAttempts: 3,
   debug: false,
   ttl: 3600,
+  onError: ({ task, error }) => console.log(`Error in ${task.name}`, error),
 });
 ```
 
