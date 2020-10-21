@@ -1,19 +1,19 @@
 {
-  "name": "@koj/template",
+  "name": "unqueue",
   "version": "0.0.0",
-  "description": "Koj's repository template with GitHub Actions CI, releases, and more",
+  "description": "📏 Simple, zero-config, in-memory queue for async JS tasks",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
-    "update-template": "npx update-template https://github.com/koj-co/template",
+    "update-template": "npx update-template https://github.com/koj-co/unqueue",
     "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koj-co/template.git"
+    "url": "git+https://github.com/koj-co/unqueue.git"
   },
   "keywords": [
     "koj",
@@ -24,9 +24,9 @@
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/koj-co/template/issues"
+    "url": "https://github.com/koj-co/unqueue/issues"
   },
-  "homepage": "https://github.com/koj-co/template#readme",
+  "homepage": "https://github.com/koj-co/unqueue#readme",
   "devDependencies": {
     "@koj/config": "1.2.5",
     "@semantic-release/changelog": "^5.0.1",
