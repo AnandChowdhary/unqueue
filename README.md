@@ -13,7 +13,8 @@ Simple, zero-config, in-memory queue for async JS tasks
 ## ⭐️ Features
 
 - No configuration or databases required (in-memory)
-- Automatically retry tasks 3 times
+- Automatically retry tasks if they fail
+- First-class TypeScript and Node.js 14 support
 
 ## 💻 Getting started
 
@@ -21,6 +22,28 @@ Install from npm:
 
 ```bash
 npm install unqueue
+```
+
+Create a new instance of the class and use the `add` function:
+
+```ts
+import { Unqueue } from "unqueue";
+
+const queue = new Unqueue();
+
+queue.add(async () => {
+  // Async function that might throw an error
+});
+```
+
+You can configure the queue, these are the defaults:
+
+```ts
+const queue = new Unqueue({
+  maxAttempts: 3,
+  debug: false,
+  ttl: 3600,
+});
 ```
 
 ## 📄 License
