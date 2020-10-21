@@ -28,7 +28,7 @@ export class Unqueue {
 
   constructor(config?: UnqueueConfig) {
     if (config) this.config = config;
-    setInterval(() => this.run(), this.config.ttl ?? 3600);
+    setInterval(() => this.run(), this.config.ttl ?? 3600000);
   }
 
   private log(...args: any[]) {
