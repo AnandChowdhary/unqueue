@@ -1,5 +1,3 @@
-import { hello } from "./";
-
 test("hello world", () => {
-  expect(hello).toBe("world");
+  expect("world").toBe("world");
 });
