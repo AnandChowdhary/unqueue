@@ -1,3 +1,9 @@
+## [v1.1.3](https://github.com/koj-co/unqueue/compare/v1.1.2...v1.1.3) (2020-11-30)
+
+### ⬆️ Dependency updates
+
+- [`a37b116`](https://github.com/koj-co/unqueue/commit/a37b116)  Bump semantic-release from 17.2.4 to 17.3.0
+
 ## [v1.1.2](https://github.com/koj-co/unqueue/compare/v1.1.1...v1.1.2) (2020-11-23)
 
 ### ⬆️ Dependency updates
