@@ -4,7 +4,7 @@ version: 0.12.0
 type: npm
 summary: Abstraction for exponential and custom retry strategies for failed operations.
 homepage: https://github.com/tim-kos/node-retry
-license: other
+license: mit
 licenses:
 - sources: License
   text: |
