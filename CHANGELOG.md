@@ -1,3 +1,13 @@
+## [v2.0.0](https://github.com/koj-co/unqueue/compare/v1.1.3...v2.0.0) (2020-12-03)
+
+### ⬆️ Dependency updates
+
+- [`020e021`](https://github.com/koj-co/unqueue/commit/020e021)  Bump @types/jest from 26.0.15 to 26.0.16
+
+### 💥 Breaking changes
+
+- [`562a7cd`](https://github.com/koj-co/unqueue/commit/562a7cd)  Add new version
+
 ## [v1.1.3](https://github.com/koj-co/unqueue/compare/v1.1.2...v1.1.3) (2020-11-30)
 
 ### ⬆️ Dependency updates
