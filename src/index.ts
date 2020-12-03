@@ -1,74 +1,42 @@
-export interface Task {
-  /** Async function to execute */
-  task: () => Promise<any>;
-  /** Number of attempts done */
-  attempt: number;
-  /** Execution error */
-  error?: any;
-  /** Optional metadata object */
-  metadata?: Record<any, any>;
-}
+import PQueue, { DefaultAddOptions, Options } from "p-queue";
+import PriorityQueue from "p-queue/dist/priority-queue";
+import pRetry, { Options as PRetryOptions } from "p-retry";
 
-export interface UnqueueConfig {
-  /** Maximum number of attempts to try, defaults to 3 */
-  maxAttempts?: number;
-  /** Debug logging */
-  debug?: boolean;
-  /** Interval to schedule */
-  ttl?: number;
-  /** Error handler helper */
-  onError?: (task: Task) => void;
-}
-
-/** Unqueue is a queue for async JS */
 export class Unqueue {
-  tasks: Array<Task> = [];
-  running = false;
-  config: UnqueueConfig = {};
+  private queue: PQueue;
 
-  constructor(config?: UnqueueConfig) {
-    if (config) this.config = config;
-    setInterval(() => this.run(), this.config.ttl ?? 3600000);
+  constructor(options?: Options<PriorityQueue, DefaultAddOptions>) {
+    this.queue = new PQueue(options);
   }
 
-  private log(...args: any[]) {
-    if (this.config.debug) console.log(...args);
+  public add<T>(
+    input: (attemptCount: number) => T,
+    pRetryOptions?: PRetryOptions,
+    pQueueOptions?: Partial<DefaultAddOptions>
+  ): Promise<T> {
+    return this.queue.add(() => pRetry<T>(input, pRetryOptions), pQueueOptions);
   }
 
-  private async run() {
-    const maxAttempts = this.config.maxAttempts ?? 3;
-    this.running = true;
-    const task = this.tasks.pop();
-    if (task) {
-      this.log("Starting task", task.task.name);
-      if (task.attempt <= maxAttempts) {
-        try {
-          await task.task();
-        } catch (error) {
-          this.log("Got an error", error);
-          this.add(task.task, task.metadata, task.attempt + 1, error);
-        }
-      } else {
-        this.log("More than 3 attempts, handling error");
-        if (typeof this.config.onError === "function") {
-          this.config.onError(task);
-        }
-      }
-    } else {
-      this.log("No task");
-    }
-    if (this.tasks.length) await this.run();
-    this.running = false;
+  start() {
+    return this.queue.start();
+  }
+  pause() {
+    return this.queue.pause();
+  }
+  clear() {
+    return this.queue.clear();
   }
 
-  /** Add a task to the queue */
-  public add(task: () => Promise<any>, metadata?: Record<any, any>, attempt = 1, error?: any) {
-    this.tasks.push({ task, attempt, error, metadata });
-    if (!this.running) this.run();
+  get size() {
+    return this.queue.size;
   }
-
-  /** Get pending tasks */
-  public getPendingTasks() {
-    return this.tasks;
+  get pending() {
+    return this.queue.pending;
+  }
+  get isPaused() {
+    return this.queue.isPaused;
+  }
+  get timeout() {
+    return this.queue.timeout;
   }
 }
