@@ -1,3 +1,17 @@
+## v2.0.1 (2020-12-14)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.1) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.0...v2.0.1) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.1) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.1.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.1.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`7bf13e9`](https://github.com/koj-co/unqueue/commit/7bf13e9)  Bump @koj/config from 1.2.9 to 1.2.11
+- [`c271028`](https://github.com/koj-co/unqueue/commit/c271028)  Bump @semantic-release/npm from 7.0.8 to 7.0.9
+- [`077e222`](https://github.com/koj-co/unqueue/commit/077e222)  Bump @types/jest from 26.0.16 to 26.0.17
+- [`ee39347`](https://github.com/koj-co/unqueue/commit/ee39347)  Bump @types/jest from 26.0.17 to 26.0.18
+- [`a75eaf5`](https://github.com/koj-co/unqueue/commit/a75eaf5)  Bump actions/setup-node from v2.1.2 to v2.1.3
+- [`f666631`](https://github.com/koj-co/unqueue/commit/f666631)  Bump @types/jest from 26.0.18 to 26.0.19
+- [`a4b1875`](https://github.com/koj-co/unqueue/commit/a4b1875)  Bump ini from 1.3.5 to 1.3.7
+
 ## [v2.0.0](https://github.com/koj-co/unqueue/compare/v1.1.3...v2.0.0) (2020-12-03)
 
 ### ⬆️ Dependency updates
