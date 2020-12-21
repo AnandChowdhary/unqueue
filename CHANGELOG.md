@@ -1,3 +1,12 @@
+## v2.0.2 (2020-12-21)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.2) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.1...v2.0.2) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.2) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.2.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.2.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`52356f2`](https://github.com/koj-co/unqueue/commit/52356f2)  Bump typescript from 4.1.2 to 4.1.3
+- [`0d6b10f`](https://github.com/koj-co/unqueue/commit/0d6b10f)  Bump actions/setup-node from v2.1.3 to v2.1.4
+
 ## v2.0.1 (2020-12-14)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.1) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.0...v2.0.1) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.1) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.1.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.1.tar.gz))
