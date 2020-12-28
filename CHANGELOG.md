@@ -1,3 +1,13 @@
+## v2.0.3 (2020-12-28)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.3) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.2...v2.0.3) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.3) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.3.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.3.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`876c425`](https://github.com/koj-co/unqueue/commit/876c425)  Bump vsoch/pull-request-action from 1.0.12 to 1.0.13
+- [`170750f`](https://github.com/koj-co/unqueue/commit/170750f)  Bump pascalgn/automerge-action from v0.12.0 to v0.13.0
+- [`56106fa`](https://github.com/koj-co/unqueue/commit/56106fa)  Bump node-notifier from 8.0.0 to 8.0.1
+
 ## v2.0.2 (2020-12-21)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.2) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.1...v2.0.2) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.2) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.2.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.2.tar.gz))
