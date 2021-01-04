@@ -1,3 +1,11 @@
+## v2.0.4 (2021-01-04)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.4) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.3...v2.0.4) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.4) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.4.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.4.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`7652c9c`](https://github.com/koj-co/unqueue/commit/7652c9c)  Bump semantic-release from 17.3.0 to 17.3.1
+
 ## v2.0.3 (2020-12-28)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.3) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.2...v2.0.3) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.3) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.3.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.3.tar.gz))
