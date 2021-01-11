@@ -1,3 +1,11 @@
+## v2.0.5 (2021-01-11)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.5) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.4...v2.0.5) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.5) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.5.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.5.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`d467a16`](https://github.com/koj-co/unqueue/commit/d467a16)  Bump @types/jest from 26.0.19 to 26.0.20
+
 ## v2.0.4 (2021-01-04)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.4) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.3...v2.0.4) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.4) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.4.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.4.tar.gz))
