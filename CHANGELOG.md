@@ -1,3 +1,14 @@
+## v2.0.7 (2021-01-25)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.7) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.6...v2.0.7) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.7) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.7.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.7.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`fbf0edf`](https://github.com/koj-co/unqueue/commit/fbf0edf)  Bump @semantic-release/npm from 7.0.9 to 7.0.10
+- [`b40657e`](https://github.com/koj-co/unqueue/commit/b40657e)  Bump semantic-release from 17.3.2 to 17.3.3
+- [`438b2b7`](https://github.com/koj-co/unqueue/commit/438b2b7)  Bump semantic-release from 17.3.3 to 17.3.4
+- [`7b4b974`](https://github.com/koj-co/unqueue/commit/7b4b974)  Bump semantic-release from 17.3.4 to 17.3.6
+
 ## v2.0.6 (2021-01-18)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.6) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.5...v2.0.6) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.6) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.6.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.6.tar.gz))
