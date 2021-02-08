@@ -1,3 +1,11 @@
+## v2.0.9 (2021-02-08)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.9) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.8...v2.0.9) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.9) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.9.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.9.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`8aed8de`](https://github.com/koj-co/unqueue/commit/8aed8de)  Bump ts-jest from 26.4.4 to 26.5.0
+
 ## v2.0.8 (2021-02-01)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.8) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.7...v2.0.8) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.8) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.8.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.8.tar.gz))
