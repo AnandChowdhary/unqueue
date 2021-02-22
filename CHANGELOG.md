@@ -1,3 +1,15 @@
+## v2.0.11 (2021-02-22)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.11) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.10...v2.0.11) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.11) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.11.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.11.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`a79fa87`](https://github.com/koj-co/unqueue/commit/a79fa87)  Bump semantic-release from 17.3.8 to 17.3.9
+- [`c74c882`](https://github.com/koj-co/unqueue/commit/c74c882)  Bump vsoch/pull-request-action from 1.0.13 to 1.0.14
+- [`5eb4ee6`](https://github.com/koj-co/unqueue/commit/5eb4ee6)  Bump pascalgn/automerge-action from v0.13.0 to v0.13.1
+- [`fe50f1b`](https://github.com/koj-co/unqueue/commit/fe50f1b)  Bump p-retry from 4.3.0 to 4.4.0
+- [`3388474`](https://github.com/koj-co/unqueue/commit/3388474)  Bump vsoch/pull-request-action from 1.0.14 to 1.0.15
+
 ## v2.0.10 (2021-02-15)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.10) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.9...v2.0.10) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.10) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.10.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.10.tar.gz))
