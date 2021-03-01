@@ -1,3 +1,14 @@
+## v2.0.12 (2021-03-01)
+
+[📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.12) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.11...v2.0.12) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.12) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.12.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.12.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`136b4c0`](https://github.com/koj-co/unqueue/commit/136b4c0)  Bump actions/setup-node from v2.1.4 to v2.1.5
+- [`fa1d218`](https://github.com/koj-co/unqueue/commit/fa1d218)  Bump typescript from 4.1.5 to 4.2.2
+- [`3ef256b`](https://github.com/koj-co/unqueue/commit/3ef256b)  Bump ts-jest from 26.5.1 to 26.5.2
+- [`9c27a95`](https://github.com/koj-co/unqueue/commit/9c27a95)  Bump semantic-release from 17.3.9 to 17.4.0
+
 ## v2.0.11 (2021-02-22)
 
 [📝 Release notes](https://github.com/koj-co/unqueue/releases/tag/v2.0.11) · [💻 Compare](https://github.com/koj-co/unqueue/compare/v2.0.10...v2.0.11) · [🔖 Tag](https://github.com/koj-co/unqueue/tree/v2.0.11) · 🗄️ Archive ([zip](https://github.com/koj-co/unqueue/archive/v2.0.11.zip) · [tar.gz](https://github.com/koj-co/unqueue/archive/v2.0.11.tar.gz))
